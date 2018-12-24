@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yy.xuexi.manage.user.dao.UserMapper">
+  <resultMap id="BaseResultMap" type="com.yy.xuexi.manage.user.pojo.User">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="card_no" jdbcType="VARCHAR" property="cardNo" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="tel" jdbcType="VARCHAR" property="tel" />
+    <result column="sex" jdbcType="INTEGER" property="sex" />
+    <result column="create_date" jdbcType="TIMESTAMP" property="createDate" />
+    <result column="modify_date" jdbcType="TIMESTAMP" property="modifyDate" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="total_balance" jdbcType="VARCHAR" property="totalBalance" />
+  </resultMap>
+	
+	<sql id="Base_Column_List">
+		id,card_no,name,tel,sex,create_date,modify_date,email,total_balance
+	</sql>
+
+  <select id="selectUserByProperty" resultMap="BaseResultMap">
+    select 
+	<include refid="Base_Column_List"></include>
+    from user
+  </select>
+  
+  <insert id="insertUser">
+  insert into user (id,card_no,name,tel,sex,create_date,modify_date,email,total_balance) values
+  (#{id,jdbcType=INTEGER},#{cardNo,jdbcType=VARCHAR},#{name,jdbcType=VARCHAR},#{tel,jdbcType=VARCHAR},#{sex,jdbcType=VARCHAR},
+  #{createDate,jdbcType=TIMESTAMP},#{modifyDate,jdbcType=TIMESTAMP},#{email,jdbcType=VARCHAR},#{totalBalance,jdbcType=VARCHAR})
+  </insert>
+</mapper>

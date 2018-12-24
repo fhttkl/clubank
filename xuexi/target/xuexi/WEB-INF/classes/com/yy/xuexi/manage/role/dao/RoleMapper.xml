@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yy.xuexi.manage.dao.RoleMapper">
+  <resultMap id="BaseResultMap" type="com.yy.xuexi.manage.pojo.Role">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="role_name" jdbcType="VARCHAR" property="roleName" />
+    <result column="sort" jdbcType="INTEGER" property="sort" />
+    <result column="create_date" jdbcType="TIMESTAMP" property="createDate" />
+    <result column="modify_date" jdbcType="TIMESTAMP" property="modifyDate" />
+    <result column="enabled_mark" jdbcType="INTEGER" property="enabledMark" />
+    <result column="delete_mark" jdbcType="INTEGER" property="deleteMark" />
+    <result column="description" jdbcType="VARCHAR" property="description" />
+  </resultMap>
+	
+
+  <select id="selectRolesByProperty" resultMap="BaseResultMap">
+    select id,role_name,sort,create_date,modify_date,enabled_mark,delete_mark,description
+    from role
+  </select>
+</mapper>

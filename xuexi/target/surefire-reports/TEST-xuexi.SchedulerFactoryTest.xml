@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="0" failures="0" name="xuexi.SchedulerFactoryTest" time="0.001" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0\jre\bin"/>
+    <property name="java.vm.version" value="25.0-b70"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\workspace\xuexi"/>
+    <property name="java.runtime.version" value="1.8.0-b132"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="basedir" value="D:\workspace\xuexi"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="surefire.real.class.path" value="C:\Users\Administrator\AppData\Local\Temp\surefirebooter6357606585021778730.jar"/>
+    <property name="java.io.tmpdir" value="C:\Users\Administrator\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0\jre\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Java\jdk1.8.0\bin;C:\windows\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\MySQL\MySQL Server 5.5\bin;D:\development\apache-maven\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Microsoft SQL Server Migration Assistant for MySQL\bin\;C:\Program Files\apache-cxf-3.0.16\bin;C:\Program Files\apache-cxf-3.0.16\lib\cxf-manifest.jar;C:\Program Files\Java\jdk1.8.0\bin;;C:\Users\Administrator\AppData\Local\Programs\Microsoft VS Code\bin;."/>
+    <property name="surefire.test.class.path" value="D:\workspace\xuexi\target\test-classes;D:\workspace\xuexi\target\classes;D:\development\maven-all\maven-repo-local\junit\junit\3.8.1\junit-3.8.1.jar;D:\development\maven-all\maven-repo-local\javax\servlet\javax.servlet-api\3.0.1\javax.servlet-api-3.0.1.jar;D:\development\maven-all\maven-repo-local\org\quartz-scheduler\quartz\2.2.2\quartz-2.2.2.jar;D:\development\maven-all\maven-repo-local\c3p0\c3p0\0.9.1.1\c3p0-0.9.1.1.jar;D:\development\maven-all\maven-repo-local\org\slf4j\slf4j-api\1.7.7\slf4j-api-1.7.7.jar;D:\development\maven-all\maven-repo-local\org\quartz-scheduler\quartz-jobs\2.2.2\quartz-jobs-2.2.2.jar;D:\development\maven-all\maven-repo-local\org\springframework\spring-core\4.0.5.RELEASE\spring-core-4.0.5.RELEASE.jar;D:\development\maven-all\maven-repo-local\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar;D:\development\maven-all\maven-repo-local\org\springframework\spring-web\4.0.5.RELEASE\spring-web-4.0.5.RELEASE.jar;D:\development\maven-all\maven-repo-local\org\springframework\spring-beans\4.0.5.RELEASE\spring-beans-4.0.5.RELEASE.jar;D:\development\maven-all\maven-repo-local\org\springframework\spring-context\4.0.5.RELEASE\spring-context-4.0.5.RELEASE.jar;D:\development\maven-all\maven-repo-local\org\springframework\spring-oxm\4.0.5.RELEASE\spring-oxm-4.0.5.RELEASE.jar;D:\development\maven-all\maven-repo-local\org\springframework\spring-tx\4.0.5.RELEASE\spring-tx-4.0.5.RELEASE.jar;D:\development\maven-all\maven-repo-local\org\springframework\spring-jdbc\4.0.5.RELEASE\spring-jdbc-4.0.5.RELEASE.jar;D:\development\maven-all\maven-repo-local\org\springframework\spring-webmvc\4.0.5.RELEASE\spring-webmvc-4.0.5.RELEASE.jar;D:\development\maven-all\maven-repo-local\org\springframework\spring-expression\4.0.5.RELEASE\spring-expression-4.0.5.RELEASE.jar;D:\development\maven-all\maven-repo-local\org\springframework\spring-aop\4.0.5.RELEASE\spring-aop-4.0.5.RELEASE.jar;D:\development\maven-all\maven-repo-local\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;D:\development\maven-all\maven-repo-local\org\springframework\spring-context-support\4.0.5.RELEASE\spring-context-support-4.0.5.RELEASE.jar;D:\development\maven-all\maven-repo-local\org\springframework\spring-test\4.0.5.RELEASE\spring-test-4.0.5.RELEASE.jar;D:\development\maven-all\maven-repo-local\org\freemarker\freemarker\2.3.19\freemarker-2.3.19.jar;D:\development\maven-all\maven-repo-local\org\mybatis\mybatis\3.2.6\mybatis-3.2.6.jar;D:\development\maven-all\maven-repo-local\org\mybatis\mybatis-spring\1.2.2\mybatis-spring-1.2.2.jar;D:\development\maven-all\maven-repo-local\org\aspectj\aspectjrt\1.7.4\aspectjrt-1.7.4.jar;D:\development\maven-all\maven-repo-local\org\aspectj\aspectjweaver\1.7.4\aspectjweaver-1.7.4.jar;D:\development\maven-all\maven-repo-local\cglib\cglib\3.1\cglib-3.1.jar;D:\development\maven-all\maven-repo-local\org\ow2\asm\asm\4.2\asm-4.2.jar;D:\development\maven-all\maven-repo-local\mysql\mysql-connector-java\5.1.30\mysql-connector-java-5.1.30.jar;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\Administrator"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="user.name" value="Administrator"/>
+    <property name="java.class.path" value="D:\workspace\xuexi\target\test-classes;D:\workspace\xuexi\target\classes;D:\development\maven-all\maven-repo-local\junit\junit\3.8.1\junit-3.8.1.jar;D:\development\maven-all\maven-repo-local\javax\servlet\javax.servlet-api\3.0.1\javax.servlet-api-3.0.1.jar;D:\development\maven-all\maven-repo-local\org\quartz-scheduler\quartz\2.2.2\quartz-2.2.2.jar;D:\development\maven-all\maven-repo-local\c3p0\c3p0\0.9.1.1\c3p0-0.9.1.1.jar;D:\development\maven-all\maven-repo-local\org\slf4j\slf4j-api\1.7.7\slf4j-api-1.7.7.jar;D:\development\maven-all\maven-repo-local\org\quartz-scheduler\quartz-jobs\2.2.2\quartz-jobs-2.2.2.jar;D:\development\maven-all\maven-repo-local\org\springframework\spring-core\4.0.5.RELEASE\spring-core-4.0.5.RELEASE.jar;D:\development\maven-all\maven-repo-local\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar;D:\development\maven-all\maven-repo-local\org\springframework\spring-web\4.0.5.RELEASE\spring-web-4.0.5.RELEASE.jar;D:\development\maven-all\maven-repo-local\org\springframework\spring-beans\4.0.5.RELEASE\spring-beans-4.0.5.RELEASE.jar;D:\development\maven-all\maven-repo-local\org\springframework\spring-context\4.0.5.RELEASE\spring-context-4.0.5.RELEASE.jar;D:\development\maven-all\maven-repo-local\org\springframework\spring-oxm\4.0.5.RELEASE\spring-oxm-4.0.5.RELEASE.jar;D:\development\maven-all\maven-repo-local\org\springframework\spring-tx\4.0.5.RELEASE\spring-tx-4.0.5.RELEASE.jar;D:\development\maven-all\maven-repo-local\org\springframework\spring-jdbc\4.0.5.RELEASE\spring-jdbc-4.0.5.RELEASE.jar;D:\development\maven-all\maven-repo-local\org\springframework\spring-webmvc\4.0.5.RELEASE\spring-webmvc-4.0.5.RELEASE.jar;D:\development\maven-all\maven-repo-local\org\springframework\spring-expression\4.0.5.RELEASE\spring-expression-4.0.5.RELEASE.jar;D:\development\maven-all\maven-repo-local\org\springframework\spring-aop\4.0.5.RELEASE\spring-aop-4.0.5.RELEASE.jar;D:\development\maven-all\maven-repo-local\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;D:\development\maven-all\maven-repo-local\org\springframework\spring-context-support\4.0.5.RELEASE\spring-context-support-4.0.5.RELEASE.jar;D:\development\maven-all\maven-repo-local\org\springframework\spring-test\4.0.5.RELEASE\spring-test-4.0.5.RELEASE.jar;D:\development\maven-all\maven-repo-local\org\freemarker\freemarker\2.3.19\freemarker-2.3.19.jar;D:\development\maven-all\maven-repo-local\org\mybatis\mybatis\3.2.6\mybatis-3.2.6.jar;D:\development\maven-all\maven-repo-local\org\mybatis\mybatis-spring\1.2.2\mybatis-spring-1.2.2.jar;D:\development\maven-all\maven-repo-local\org\aspectj\aspectjrt\1.7.4\aspectjrt-1.7.4.jar;D:\development\maven-all\maven-repo-local\org\aspectj\aspectjweaver\1.7.4\aspectjweaver-1.7.4.jar;D:\development\maven-all\maven-repo-local\cglib\cglib\3.1\cglib-3.1.jar;D:\development\maven-all\maven-repo-local\org\ow2\asm\asm\4.2\asm-4.2.jar;D:\development\maven-all\maven-repo-local\mysql\mysql-connector-java\5.1.30\mysql-connector-java-5.1.30.jar;"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0\jre"/>
+    <property name="sun.java.command" value="C:\Users\Administrator\AppData\Local\Temp\surefirebooter6357606585021778730.jar C:\Users\Administrator\AppData\Local\Temp\surefire1379697499113409648tmp C:\Users\Administrator\AppData\Local\Temp\surefire9093235621856207768tmp"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0\jre\lib\ext;C:\windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="localRepository" value="D:\development\maven-all\maven-repo-local"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+</testsuite>
