@@ -21,11 +21,11 @@ public class CrossFilter extends OncePerRequestFilter{
 	@Override
 	protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
 			throws ServletException, IOException {
-		if (request.getHeader("Origin") != null) {
-            response.addHeader("Access-Control-Allow-Origin", "*");
-            response.setHeader("Access-Control-Allow-Headers", "Content-Type, token, customerId, userId, flatType");
-        }
-        filterChain.doFilter(request, response);
+//		if (request.getHeader("Origin") != null) {
+//            response.addHeader("Access-Control-Allow-Origin", "*");
+//            response.setHeader("Access-Control-Allow-Headers", "Content-Type, token, customerId, userId, flatType");
+//        }
+//        filterChain.doFilter(request, response);
 	}
 
 }
