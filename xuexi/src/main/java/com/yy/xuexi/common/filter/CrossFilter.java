@@ -10,12 +10,14 @@ import javax.servlet.http.HttpServletResponse;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 /**
- * 解决跨域过滤�?
+ * 解决跨域过滤�?
  * @author YangWei
  *
  */
 public class CrossFilter extends OncePerRequestFilter{
 
+	
+	
 	@Override
 	protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
 			throws ServletException, IOException {
